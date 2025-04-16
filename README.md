@@ -65,20 +65,20 @@ Copy example.settings.json to appsettings.json in the backend project directory.
 4. **Restore and build dependencies:**
 
    ```bash
-  dotnet restore
-  dotnet build
+   dotnet restore
+   dotnet build
   
 5. **Run the backend:**
 
    ```bash
-  dotnet run
+   dotnet run
   
 The API will be available at https://localhost:5001 (or as configured).
 
 6. **Frontend Setup**
 
    ```bash
-  cd ../client
+   cd ../client
   
 7. **Install dependencies:**
 
@@ -88,7 +88,7 @@ The API will be available at https://localhost:5001 (or as configured).
 8. **Start the frontend:**
 
    ```bash
-  npm start
+   npm start
   
 The React app will be available at http://localhost:3000 by default.
 
@@ -115,15 +115,13 @@ Ensure the Documents directory is writable by the application for PDF generation
 Expose the necessary ports and configure HTTPS.
 
 **Frontend Deployment**
-Build the React app for production:
-
-
-   ```bash
-   npm run build
 
 Deploy the contents of the build directory to your static hosting provider (Vercel, Netlify, AWS S3, etc.).
 
 Stripe and OpenAI Configuration
 Make sure your Stripe and OpenAI API keys are valid and have the necessary permissions.
 
-For Stripe webhooks or advanced payment flows, configure your backend endpoint URLs in the Stripe dashboard.
+Build the React app for production:
+
+   ```bash
+   npm run build
